@@ -134,9 +134,9 @@ h1 {
 /*Welcome-screen Layout --> Menu*/
 
 .welcome-screen__menu {
-  background-color: rgb(88, 32, 7,0.5);
-  border-top: 1px solid #461a07;
-  border-bottom: 1px solid #461a07;
+  background-color: rgb(0, 0, 0,0.65);
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
   display: grid;
   font-size: 22px;
   font-weight: 500;
@@ -154,12 +154,12 @@ h1 {
 .welcome-screen__menu .menu__item {
     display: inline-block;
     margin-right: 25px;
-    padding: 10px;
+    padding: 10px 30px;
 }
 
 .welcome-screen__menu .menu__item:hover,
 .welcome-screen__menu .menu__item_active {
-  background-color: rgba(0,0,0,0.6);
+  background-color: var(--main-color);
 }
 
 /*Container Layout*/
@@ -267,7 +267,7 @@ h1 {
  display: inline-block;
  vertical-align: middle;
  width: 56px;
- height: 54px;
+ height: 56px;
  background: url("data:image/png;base64,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") 0 0 no-repeat;
  margin: 0 20px 0 6px;
  background-size: 56px 56px;
@@ -275,6 +275,17 @@ h1 {
 
 .howto__footer {
   padding: 30px 0;
+}
+
+.howto__footer_button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.howto__footer_button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .howto__footer p {
