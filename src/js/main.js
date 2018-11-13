@@ -2,7 +2,7 @@
     var Navigation = {
         init: function() {
           },
-        ClickContinueButton: function() {
+        ClickBuyAbonnementButton: function() {
             $(".buy_abonnement").click(function() {
               $(".menu__item").removeClass("menu__item_active");
               $("#abonnement-tab").toggleClass("menu__item_active");
@@ -17,10 +17,25 @@
                    }
                  });
             });
+        },
+        ClickMainTab: function() {
+          $("#main-tab").click(function() {
+            $.ajax({
+                 url: "/",
+                 dataType: "html",
+                 success: function(data) {
+                     $(".container").html(data);
+                 },
+                 error: function() {
+                     alert("Not OK");
+                 }
+               });
+          });
         }
     };
     $(document).ready(function(){
         console.log("We started our work");
-        Navigation.ClickContinueButton();
+        Navigation.ClickBuyAbonnementButton();
+        Navigation.ClickMainTab();
     });
 })(jQuery);
