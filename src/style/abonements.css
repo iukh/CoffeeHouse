@@ -1,0 +1,138 @@
+#visible-content {
+  width: 1200px;
+  overflow: hidden;
+}
+.container-select-abonement {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 30px auto;
+  text-align: center;
+}
+.slider-content {
+width: 2300px;
+margin: 15px 10px 50px 10px;
+white-space: nowrap;
+left: 0px;
+position: relative;
+transition: left .5s ease-in-out;
+}
+.slide-item {
+  width: 350px;
+  height: 400px;
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;
+}
+.button-left,
+.button-right {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.slide-item__photo {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-size: cover;
+  border-radius: 5px;
+}
+.slide-item:hover {
+  box-shadow: 0 3px 10px 2px #5d5959;
+  transform: translate(0, -10px);
+}
+.abonement-container {
+  padding:20px;
+  color: black;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background-color: rgba(255, 255, 255,0.65);
+  font-size: 20px;
+}
+.abonement-container h2 {
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  padding: 10px;
+}
+.item-price {
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: #8e3007;
+    text-align: center;
+    margin-bottom: 22px;
+   margin-top: 20px;
+}
+.item-button {
+  font-size: 22px;
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  border-radius: 50px;
+  margin: 20px 0 40px 0;
+  border: none;
+  transition: All 0.5s ease;
+}
+.item-button:hover {
+  width: 135px;
+  height: 50px;
+  background: #8e3007;
+  border-radius: 55px;
+
+}
+.item-desc {
+  margin: 20px;
+}
+.item-more a {
+  border-bottom: 2px dashed black;
+}
+
+/* Order-Form layout */
+.order-form {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px inset #8e3007;
+  border-radius: 10px;
+}
+.order-form-disabled {
+  display: none;
+}
+.order-form input {
+  display: block;
+  padding: 10px 30px;
+  margin: 20px auto;
+}
+.order-form button {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.order-form select {
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+  }
+
+/* */
+.order-success__container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-top: 1px inset #8e3007;
+}
+
+.order-success {
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px;
+}
+.order-success-disabled {
+  display: none;
+}
+.order-success button {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
